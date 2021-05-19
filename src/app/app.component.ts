@@ -11,7 +11,9 @@ export class AppComponent {
     {nombre: 'Vanessa Martinez', estado: 'Aprobado' },
     {nombre: 'Daniel Moreno', estado: 'Reprobado'},
     {nombre: 'Jose Torres', estado: 'Aprobado'}
-
   ]
-  
+  mostrar = true;
+  toggle(): void {
+    this.mostrar=!this.mostrar
+  }
 }
